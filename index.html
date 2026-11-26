@@ -12,10 +12,10 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#10b981',
-                        secondary: '#047857',
-                        dark: '#0f172a',
-                        darker: '#050806',
+                        primary: '#d8b48a',
+                        secondary: '#8b5e3c',
+                        dark: '#1c1410',
+                        darker: '#140e0b',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -509,6 +509,97 @@
             .experience-card { padding: 20px; }
             .experience-icon { width: 44px; height: 44px; margin-bottom: 16px; }
         }
+        /* ===== MILK & BROWN THEME ===== */
+:root {
+    --bg-main: #1c1410;
+    --bg-section: #251b15;
+    --card: #2d221b;
+    --card-hover: #382a21;
+    --text-main: #f6ede3;
+    --text-muted: #c9b8a6;
+    --primary-new: #d8b48a;
+    --border-new: #4a382c;
+    --main-color: #8b5e3c;
+    --shadow-new: 0 16px 45px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background:
+        radial-gradient(circle at 85% 8%, rgba(216,180,138,.10), transparent 28%),
+        radial-gradient(circle at 10% 35%, rgba(176,125,86,.08), transparent 25%),
+        var(--bg-main) !important;
+}
+
+nav { background: rgba(28,20,16,.88) !important; border-bottom: 1px solid rgba(216,180,138,.15); }
+.nav-link { color: #e6d5c3 !important; }
+.nav-link::after { background: linear-gradient(90deg, #e8cfae, #b07d56); }
+
+.gradient-text {
+    background: linear-gradient(90deg, #f0dcc0, #d8b48a, #b88a5f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.text-slate-600 { color: #d8b48a !important; }
+.text-slate-300 { color: #dccab7 !important; }
+.text-slate-200 { color: #eadbc9 !important; }
+
+.btn-primary {
+    background: linear-gradient(135deg, #e0c3a0, #b88a5f) !important;
+    color: #2a1b12 !important;
+    box-shadow: 0 10px 25px rgba(216,180,138,.2);
+}
+.btn-primary:hover { box-shadow: 0 14px 32px rgba(216,180,138,.3); }
+
+.card-hover:hover { box-shadow: 0 10px 25px rgba(216,180,138,.18); }
+
+.project-card {
+    background: linear-gradient(145deg, #2f241c, #241a15) !important;
+    border: 1px solid var(--border-new);
+}
+.project-card:hover,
+#skills .card-hover:hover { border-color: rgba(216,180,138,.55); }
+
+.social-icon { background: #2d221b !important; color: #e8cfae !important; border: 1px solid #4a382c; }
+.social-icon:hover {
+    background: linear-gradient(135deg, #e0c3a0, #b88a5f) !important;
+    color: #2a1b12 !important;
+}
+
+.skill {
+    background: linear-gradient(135deg, #8b5e3c, #6b4429) !important;
+    border: 1px solid rgba(232,207,174,.2);
+}
+.skills-box { background: linear-gradient(145deg, #2d221b, #211813); border: 1px solid var(--border-new); }
+#skills .card-hover { background: #2d221b !important; border: 1px solid var(--border-new); }
+
+.section-kicker {
+    background: rgba(216,180,138,.10);
+    border: 1px solid rgba(216,180,138,.25);
+    color: #e8cfae;
+}
+.section-line { background: linear-gradient(90deg, #e8cfae, #b07d56); }
+
+.experience-card {
+    background: linear-gradient(145deg, #2f241c, #221913);
+    border: 1px solid var(--border-new);
+}
+.experience-card::before { background: linear-gradient(90deg, #e8cfae, #d8b48a, #b07d56); }
+.experience-card:hover { border-color: rgba(216,180,138,.5); }
+.experience-icon {
+    background: linear-gradient(135deg, rgba(216,180,138,.15), rgba(176,125,86,.15));
+    border: 1px solid rgba(232,207,174,.18);
+    color: #e8cfae;
+}
+.experience-number { color: #5a4637; }
+.experience-meta { color: #c9b8a6; }
+.experience-meta i, .experience-card li::before { color: #d8b48a; }
+.experience-card li { color: #c9b8a6; }
+
+footer { background: #140e0b !important; border-top: 1px solid var(--border-new); }
+#back-to-top { background: linear-gradient(135deg, #e0c3a0, #b88a5f) !important; color: #2a1b12 !important; }
+#home::before { background: rgba(216,180,138,.08); }
+#home img { border-color: #4a382c !important; }
     </style>
 </head>
 <body class="bg-dark text-slate-200">
